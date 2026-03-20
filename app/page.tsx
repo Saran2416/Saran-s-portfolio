@@ -1,0 +1,24 @@
+import React from 'react';
+import Hero from '../components/Hero';
+import About from '../components/About';
+import Skills from '../components/Skills';
+import Projects from '../components/Projects';
+import Timeline from '../components/Timeline';
+import Achievements from '../components/Achievements';
+import Contact from '../components/Contact';
+
+const HomePage = () => {
+    return (
+        <>
+            <Hero />
+            <About />
+            <Skills />
+            <Projects />
+            <Timeline />
+            <Achievements />
+            <Contact />
+        </>
+    );
+};
+
+export default HomePage;
