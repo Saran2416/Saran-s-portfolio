@@ -1,0 +1,26 @@
+[00:00:02.081] Server  LOG     ✓ Ready in 1526ms
+[00:00:05.207] Server  LOG     ○ Compiling / ...
+[00:00:09.475] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:16.436] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:52.579] Server  LOG     ✓ Compiled in 30ms
+[00:03:50.786] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:40.520] Server  LOG     ✓ Compiled in 402ms
+[00:08:44.755] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/profile.jpg" "received" null
+[00:10:39.834] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/profile.jpg" "received" null
+[00:10:45.934] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/profile.jpg" "received" null
+[00:10:46.129] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:15.358] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:16.404] Browser WARN    Image with src "/profile.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:19:49.757] Server  LOG     ✓ Compiled in 22ms
+[00:20:29.038] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:20:30.028] Browser WARN    Image with src "/profile.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:21:36.474] Server  LOG     ✓ Compiled in 34ms
+[00:21:37.119] Browser WARN    Image with src "/profile.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:22:46.905] Server  LOG     ✓ Compiled in 17ms
+[00:25:06.080] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:06.536] Browser WARN    Image with src "/profile.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:28:19.935] Server  LOG     ✓ Compiled in 89ms
+[00:28:28.219] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:28.701] Browser WARN    Image with src "/profile.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes

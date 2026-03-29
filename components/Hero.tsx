@@ -127,7 +127,7 @@ const Button = styled(motion.a)`
 `;
 
 const Hero = () => {
-  const roles = ["Aspiring Developer", "Tech Enthusiast", "Creative Coder", "Problem Solver"];
+  const roles = ["Aspiring Developer", "Tech Enthusiast", "Vibe Coder", "Problem Solver"];
   const [currentRole, setCurrentRole] = useState(0);
   const [displayText, setDisplayText] = useState("");
 
@@ -178,7 +178,7 @@ const Hero = () => {
           fontSize: '1.2rem',
           color: 'rgba(255, 255, 255, 0.7)',
           maxWidth: '600px',
-          margin: '1rem 0 2rem 0', 
+          margin: '1rem 0 2rem 0',
           zIndex: 2
         }}
       >

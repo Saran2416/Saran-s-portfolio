@@ -37,7 +37,7 @@ const SocialLink = styled(motion.a)`
 const Footer = () => {
   return (
     <FooterContainer>
-      <FooterText>&copy; 2024 Alex Johnson. All rights reserved. Built with Next.js & Styled Components.</FooterText>
+      <FooterText>&copy; 2024 S.Saran. All rights reserved. Built with Next.js & Styled Components.</FooterText>
       <SocialLinks>
         <SocialLink
           href="https://github.com/yourprofile"

@@ -1,16 +1,17 @@
 import type { Metadata } from 'next';
 import LayoutProvider from './LayoutProvider';
+import StyledComponentsRegistry from './registry';
 
 export const metadata: Metadata = {
-  title: 'Alex Johnson - Full Stack Developer Portfolio',
+  title: 'S.Saran - Full Stack Developer Portfolio',
   description: 'Portfolio website showcasing my projects, skills, and experience in full-stack web development with React, Node.js, and TypeScript.',
   keywords: ['developer', 'portfolio', 'react', 'nextjs', 'typescript', 'full-stack'],
-  authors: [{ name: 'Alex Johnson' }],
+  authors: [{ name: 'S.Saran' }],
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://yourportfolio.com',
-    siteName: 'Alex Johnson Portfolio',
+    siteName: 'S.Saran Portfolio',
   },
 };
 
@@ -27,7 +28,9 @@ export default function RootLayout({
         <meta name="theme-color" content="#00d4ff" />
       </head>
       <body>
-        <LayoutProvider>{children}</LayoutProvider>
+        <StyledComponentsRegistry>
+          <LayoutProvider>{children}</LayoutProvider>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );

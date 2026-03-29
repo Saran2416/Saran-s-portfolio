@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import styled, { keyframes } from 'styled-components';
 import { motion } from 'framer-motion';
 import '../app/theme';
@@ -103,30 +104,39 @@ const gradientShift = keyframes`
 `;
 
 const AboutImage = styled(motion.div)`
-  background: ${({ theme }) => theme.colors.surface};
-  backdrop-filter: blur(20px);
-  border-radius: 20px;
-  padding: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: ${({ theme }) => theme.shadows.card};
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 400px;
   position: relative;
   
+  @media (max-width: 768px) {
+    margin-top: 2rem;
+  }
+`;
+
+const ImageFrame = styled.div`
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: ${({ theme }) => theme.shadows.glow};
+  max-width: 320px;
+  height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
   &::before {
     content: '';
     position: absolute;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background: linear-gradient(45deg, rgba(0, 212, 255, 0.1), rgba(255, 0, 255, 0.1));
-    border-radius: 20px;
+    z-index: 0;
     animation: ${gradientShift} 4s ease infinite;
-  }
-
-  @media (max-width: 768px) {
-    min-height: 300px;
   }
 `;
 
@@ -197,7 +207,14 @@ const About = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <PlaceholderImage>�‍💻 Developer</PlaceholderImage>
+          <ImageFrame>
+            <Image 
+              src="/profile.jpg" 
+              alt="S.Saran" 
+              fill
+              style={{ borderRadius: '15px', objectFit: 'cover', zIndex: 1, padding: '10px' }}
+            />
+          </ImageFrame>
         </AboutImage>
       </AboutContent>
     </AboutContainer>
